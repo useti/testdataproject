@@ -18,16 +18,61 @@
 #	Execution folder: ./
 #--------------------------------------------------------------------------#
 
-# STEP 0: - STEP DESCRIPTION
+# STEP 0: Create output folder
 
-echo "Hello world"
+mkdir 00_Data/00_Prestine_data/20190313_Tax
 
 # EXPECTED RESULT:
-# Console Output - "Hello world"
+# Folder 00_Data/00_Prestine_data/20190313_Tax created
 
 # ACTUAL RESULT  :
-
+# Folder 00_Data/00_Prestine_data/20190313_Tax created
 
 #--------------------------------------------------------------------------#
 
-# STEP 1: ....
+# STEP 1: Download datafile
+
+wget -O "./00_Data/00_Prestine_data/20190313_Tax/data-14022019-structure-07142014.csv" \
+http://data.nalog.ru/opendata/7707329152-address/data-14022019-structure-07142014.csv
+
+# EXPECTED RESULT:
+# File data-14022019-structure-07142014.csv downloaded
+
+# ACTUAL RESULT  :
+# File data-14022019-structure-07142014.csv downloaded
+
+#--------------------------------------------------------------------------#
+
+# STEP 2: Check file size
+
+ls -la 00_Data/00_Prestine_data/20190313_Tax
+
+# EXPECTED RESULT: 
+# 1262908
+
+# ACTUAL RESULT  :
+# 1262908
+
+#--------------------------------------------------------------------------#
+
+# STEP 3: Calculate number of lines
+
+wc -l 00_Data/00_Prestine_data/20190313_Tax/data-14022019-structure-07142014.csv
+
+# EXPECTED RESULT: 
+# 870
+
+# ACTUAL RESULT  :
+# 870
+
+#--------------------------------------------------------------------------#
+
+# STEP 4: Calculate file md5
+
+md5 00_Data/00_Prestine_data/20190313_Tax/data-14022019-structure-07142014.csv
+
+# EXPECTED RESULT: 
+# fbbd14ff04485489afe3ba32ee442b94
+
+# ACTUAL RESULT  :
+# fbbd14ff04485489afe3ba32ee442b94
