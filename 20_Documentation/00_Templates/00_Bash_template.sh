@@ -2,6 +2,11 @@
 #
 #--------------------------------------------------------------------------#
 #	Project			:
+#	File folder 	: 
+#	File name		:
+#	DESCRIPTION 	:
+#
+#
 #	Created by		:
 #	Creation date	:
 #	QC by			:
@@ -13,7 +18,7 @@
 #	Execution folder:
 #--------------------------------------------------------------------------#
 
-# STEP 0: - STEP DESCRIPTION
+# STEP 0: STEP DESCRIPTION
 
 echo "Hello world"
 
